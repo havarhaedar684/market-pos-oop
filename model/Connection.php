@@ -6,6 +6,9 @@ Class Database{
         public $c="";
         public $d="market_oop";
         public $conn;
+public function __construct(){
+    $this->Connection_Database();
+}
 public function Connection_Database(){
     $this->conn=mysqli_connect(
     $this->a,
@@ -13,16 +16,11 @@ public function Connection_Database(){
     $this->c,
     $this->d
    );
-   if($this->conn){
-    echo "You have a connection";
-   }else{
-    echo "You dont have a connection";
-   }
-   return $this->conn;
+   
     }
 }
 $obj=new Database();
-$obj->Connection_Database();
+
 
 
 ?>
