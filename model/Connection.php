@@ -16,6 +16,7 @@ public function Connection_Database(){
     $this->c,
     $this->d
    );
+   date_default_timezone_set('Asia/Baghdad');
    
     }
 }

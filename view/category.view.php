@@ -294,7 +294,7 @@ tbody tr:hover {
                 <p>Manage your product categories</p>
             </div>
 
-            <a href="#" class="add-btn">
+            <a href="addC.controller.php" class="add-btn">
                 <i class="fa-solid fa-plus"></i>
                 Add Category
             </a>
@@ -328,7 +328,7 @@ tbody tr:hover {
                         </td>
 
                         <td>
-                           <?php echo $row['created_at'];  ?>
+                           <?php echo date('Y-m-d , H:i:s', strtotime($row['created_date'])); ?>
                         </td>
 
                         <td>
